@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <h1 class="title">Weather Dashboard</h1>
+      </div>
+    </header>
+    <main class="bg">
+      <div class="container grid grid-cols-4 gap-3">
+        <div class="col-span-1">
+          <div>
+            <form class="search-box" id="inputForm">
+              <label class="mb-2 subheader" for="">Search for a city:</label>
+              <input
+                type="text"
+                placeholder="City Name:"
+                class="border-2 border-gray-700 mb-2"
+                id="searchCity"
+              />
+              <button
+                class="button bg-sky-500 hover:bg-sky-600 mb-2"
+                type="submit"
+                id="submitBtn"
+              >
+                Search
+              </button>
+            </form>
+          </div>
+          <div id="search-history">
+            <!-- <button class="button" id="clearButton">
+              Clear Search History
+            </button> -->
+          </div>
+        </div>
+
+        <div class="col-span-3">
+          <div class="weather-container">
+            <h2>
+              <span id="currentLocation"></span> <span id="currentDate"></span
+              ><img id="currentImage" src="" alt="" />
+            </h2>
+            <p class="card-info">Temp: <span id="currentTemp"></span></p>
+            <p class="card-info">Wind: <span id="currentWinds"></span></p>
+            <p class="card-info">
+              Humidity: <span id="currentHumidity"></span>
+            </p>
+            <p class="card-info">
+              UV Index: <span class="" id="currentUV"></span>
+            </p>
+          </div>
+
+          <div id="container"></div>
+          <div id="futureForecast"></div>
+        </div>
+      </div>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
