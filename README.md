@@ -1,6 +1,14 @@
 # Weather-app
 ## Weather App
 In this project, I was tasked with building a weather dashboard which gave the user access to specific weather data related to a city.
+## How to Install
+Tutorial on how to run this application:
+```
+clone the repository locally
+navigate to localhost:5500 to view the website
+```
+
+
 ## Technology Used
 - HTML
 - CSS
